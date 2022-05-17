@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="640">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport"
+          content="width=640,target-densitydpi=device-dpi,maximum-scale=1.0, user-scalable=no">
+    <title>JS接口测试</title>
+    <script type="text/javascript">
+        var audioJson = encodeURIComponent('{"authoricon":"https://facepic.qidian.com/qd_face/349573/38/100","isVip":false,"eventmsg":"","lastupdatechaptername":"","downloadUrl":"","payinfo":false,"bookdiscount":100,"free":0,"downloadType":3,"isfinished":0,"totalChapters":274,"form":"","mediakey":"MTMD*SJKM4R6:K,B","ltimedisprice":0,"limitfreechapterstime":"2014-02-12#2014-03-01","discountEndtime":"","copyright":"天方听书","packageSize":20,"discount":"20-100","price":0,"ltimedismsg":"","limitfreechapters":[],"needOpenVip":true,"islogin":true,"lastupdatechapterid":274,"version":1501567706737,"publisher":1,"id":90000356,"author":"小喜","discountStarttime":"","unitprice":30,"title":"九娘","bookid":469600,"commentcount":21,"drm":0,"updateChapters":[],"songer":"訫念","fileformat":"mp3","isPublished":1,"ltimedisperiod":"","vipdiscount":80,"updateDate":1501567673,"needrc":true,"intro":"　　豪门似海，萧郎成子，咫尺之间的距离，却耗费了她一生的时光来守候...\n　　她：青灯古庙,持经效佛,是我最好的归宿。\n　　他：不要!断你的发就是断我的命！我要亲手为你绾发画眉！你等我！\n　　她：何苦痴缠？生生世世，终有一日，我们会在轮回中相逢．．．\n　　他：我只要这一世！你等我！","retCode":0,"txtIsPublished":1,"maxfreechapter":5,"islimitfreebook":false,"resType":"2"}');
+        var textJson = encodeURIComponent('{"authoricon":"0","isVip":false,"eventmsg":"","lastupdatechaptername":"第76章 “冰与火之歌”与我的七个瞬间","downloadUrl":"","payinfo":false,"newdownloadType":1,"bookdiscount":100,"categoryName":"小说","free":0,"downloadType":1,"authorid":0,"isfinished":1,"totalChapters":76,"bookfrom":0,"form":1,"ltimedisprice":0,"limitfreechapterstime":"2014-02-12#2014-03-01","discountEndtime":"","copyright":"","discount":"20-100","packageSize":20,"price":5028,"publishtime":"2017-01-09 17:03:36","ltimedismsg":"","downloadinfo":{"teb":"fcb18e55f1adb45bb851d9559e520c7f","qteb":"e91e7e0f002d1488a8d23d8037fd78eb","trial":"5ba932234212e1901ce0e5cd028a272f","txt":""},"limitfreechapters":[],"islogin":true,"lastupdatechapterid":76,"version":1495019245,"publisher":"重庆出版社","id":849861,"author":"(美)乔治·R.R.马丁","discountStarttime":"","unitprice":0,"title":"冰与火之歌卷一：权力的游戏（合集）","commentcount":185,"drm":1,"isbn":"9787229118259","updateChapters":[],"fileformat":"txt","ltimedisperiod":"","vipdiscount":80,"updateDate":1483952616,"needrc":true,"intro":"《权力的游戏》：美国作家乔治·R.R.马丁所著的七卷系列史诗奇幻小说《冰与火之歌》中的第一卷。在这个四季时序错乱，长时酷暑或又寒冬十年的世界，残酷、黑暗的一系列宫廷斗争，相互厮杀，不会停歇。远在南方的七大王国国王劳勃突然造访北方的临冬城，会见城主、也是同他从小一起长大的挚友——艾德，这不是简单的叙旧，而是想让他担任七大王国的首相。其实在终年冰封的北境，艾德与妻儿也过着与世无争的生活，这次到访无疑让艾德千思万绪，一切的秘密在一封密信中爆发。前首相琼恩·艾林的死因，矛头全指向了劳勃的皇后，第一望族的瑟曦，为了支援劳勃，艾德投入了这一场宫廷的漩涡中。战争才半露面，心灵的撞击就如此猛烈，美好才一开始，黑暗就铺天盖地袭来。愈是接近死亡，一切就愈真实，愈能与读者产生呼应。拿起这本书，就无法放下了。","retCode":0,"wordscount":535998,"mediaid":0,"maxfreechapter":6,"islimitfreebook":false,"resType":"0"}');
+        var textJson1 = encodeURIComponent('{"type":"1","authoricon":"0","isVip":false,"eventmsg":"","lastupdatechaptername":"第76章 “冰与火之歌”与我的七个瞬间","downloadUrl":"","payinfo":false,"newdownloadType":1,"bookdiscount":100,"categoryName":"小说","free":0,"downloadType":1,"authorid":0,"isfinished":1,"totalChapters":76,"bookfrom":0,"form":1,"ltimedisprice":0,"limitfreechapterstime":"2014-02-12#2014-03-01","discountEndtime":"","copyright":"","discount":"20-100","packageSize":20,"price":5028,"publishtime":"2017-01-09 17:03:36","ltimedismsg":"","downloadinfo":{"teb":"fcb18e55f1adb45bb851d9559e520c7f","qteb":"e91e7e0f002d1488a8d23d8037fd78eb","trial":"5ba932234212e1901ce0e5cd028a272f","txt":""},"limitfreechapters":[],"islogin":true,"lastupdatechapterid":76,"version":1495019245,"publisher":"重庆出版社","bid":849861,"author":"(美)乔治·R.R.马丁","discountStarttime":"","unitprice":0,"title":"冰与火之歌卷一：权力的游戏（合集）","commentcount":185,"drm":1,"isbn":"9787229118259","updateChapters":[],"fileformat":"txt","ltimedisperiod":"","vipdiscount":80,"updateDate":1483952616,"needrc":true,"intro":"《权力的游戏》：美国作家乔治·R.R.马丁所著的七卷系列史诗奇幻小说《冰与火之歌》中的第一卷。在这个四季时序错乱，长时酷暑或又寒冬十年的世界，残酷、黑暗的一系列宫廷斗争，相互厮杀，不会停歇。远在南方的七大王国国王劳勃突然造访北方的临冬城，会见城主、也是同他从小一起长大的挚友——艾德，这不是简单的叙旧，而是想让他担任七大王国的首相。其实在终年冰封的北境，艾德与妻儿也过着与世无争的生活，这次到访无疑让艾德千思万绪，一切的秘密在一封密信中爆发。前首相琼恩·艾林的死因，矛头全指向了劳勃的皇后，第一望族的瑟曦，为了支援劳勃，艾德投入了这一场宫廷的漩涡中。战争才半露面，心灵的撞击就如此猛烈，美好才一开始，黑暗就铺天盖地袭来。愈是接近死亡，一切就愈真实，愈能与读者产生呼应。拿起这本书，就无法放下了。","retCode":0,"wordscount":535998,"mediaid":0,"maxfreechapter":6,"islimitfreebook":false,"resType":"0"}');
+
+        function jsbookaddBook2() {
+            window.open('jsbridge://JSBook/addBook/1/' + audioJson + '/callback.alert');
+        }
+
+        function jsbookaddBook() {
+            window.open('jsbridge://JSBook/addBook/1/' + textJson + '/callback.alert');
+        }
+
+        //setTitleBar标题栏的测试函数
+        function setTitleBar1() {
+            var title = '原来是梦';
+            var rightIcon = encodeURIComponent('https://mail.qq.com/zh_CN/htmledition/images/favicon/qqmail_favicon_32h.png');
+
+            var left = '{"position":left","type":"text","content":"hehe","callback":"callback.alert"}';
+            var right = '{"position":right","type":"icon","content":"' + rightIcon + '","callback":"callback.alert"}';
+            var secondRight = '{"position":secondRight","type":"text","content":"确定","callback":"callback.alert"}';
+
+            window.open('jsbridge://JSInteract/setTitleBar/1/' + title + '/' + left + '/' + right + '/' + secondRight);
+        }
+        function setTitleBar2() {
+            var title = '原来是梦';
+            var leftIcon = encodeURIComponent('https://mail.qq.com/zh_CN/htmledition/images/favicon/qqmail_favicon_32h.png');
+            var rightIcon = encodeURIComponent('https://cdn-dida365-com.alikunlun.com/static/img/touch-icon-ipad.png');
+
+            var left = '{"position":left","type":"icon","content":"' + leftIcon + '","callback":"callback.alert"}';
+            var right = '{"position":secondRight","type":"text","content":"取消","callback":"callback.callback.alert"}';
+            var secondRight = '{"position":right","type":"icon","content":"' + rightIcon + '","callback":"callback.alert"}';
+
+            window.open('jsbridge://JSInteract/setTitleBar/1/' + title + '/' + left + '/' + right + '/' + secondRight);
+        }
+        function setTitleBar3() {
+            var title = '原来是梦';
+            var leftIcon = encodeURIComponent('https://mail.qq.com/zh_CN/htmledition/images/favicon/qqmail_favicon_32h.png');
+            var rightIcon = encodeURIComponent('https://cdn-dida365-com.alikunlun.com/static/img/touch-icon-ipad.png');
+
+            var left = 'null';
+            var right = '{"position":secondRight","type":"text","content":"匆匆","callback":"callback.alert"}';
+            var secondRight = '{"position":right","type":"text","content":"忙忙","callback":"callback.alert"}';
+
+            window.open('jsbridge://JSInteract/setTitleBar/1/' + title + '/' + left + '/' + right + '/' + secondRight);
+        }
+        function setTitleBar4() {
+            var title = '原来是梦';
+            var leftIcon = encodeURIComponent('https://mail.qq.com/zh_CN/htmledition/images/favicon/qqmail_favicon_32h.png');
+            var rightIcon = encodeURIComponent('https://cdn-dida365-com.alikunlun.com/static/img/touch-icon-ipad.png');
+
+            var left = 'null';
+            var right = '{"position":secondRight","type":"text","content":"慌慌","callback":"callback.alert"}';
+            var secondRight = '{"position":right","type":"text","content":"张张","callback":"callback.alert"}';
+
+            window.open('jsbridge://JSInteract/setTitleBar/1/' + title + '/' + left + '/' + right + '/' + secondRight);
+        }
+        function setTitleBar5() {
+            var title = '原来是梦';
+            var secondIcon = encodeURIComponent('https://mail.qq.com/zh_CN/htmledition/images/favicon/qqmail_favicon_32h.png');
+            var rightIcon = encodeURIComponent('https://cdn-dida365-com.alikunlun.com/static/img/touch-icon-ipad.png');
+
+            var left = 'null';
+            var right = '{"position":secondRight","type":"icon","content":"'+ rightIcon +'","callback":"callback.alert"}';
+            var secondRight = '{"position":right","type":"icon","content":"' + secondIcon + '","callback":"callback.alert"}';
+
+            window.open('jsbridge://JSInteract/setTitleBar/1/' + title + '/' + left + '/' + right + '/' + secondRight);
+        }
+        function setTitleBar6() {
+            var title = '原来是梦';
+            var secondIcon = encodeURIComponent('http://ww3.sinaimg.cn/small/6aa88161jw1f0pm3lyrk8j202001fa9u.jpg');
+            var rightIcon = encodeURIComponent('/images2/comment_normal.png');
+
+            var left = 'null';
+            var right = '{"position":secondRight","type":"icon","content":"'+ rightIcon +'","callback":"callback.alert"}';
+            var secondRight = '{"position":right","type":"icon","content":"' + secondIcon + '","callback":"callback.alert"}';
+
+            window.open('jsbridge://JSInteract/setTitleBar/1/' + title + '/' + left + '/' + right + '/' + secondRight);
+        }
+
+        function setTitleBar61() {
+            var title = '原来是梦';
+            var secondIcon = encodeURIComponent('https://mail.qq.com/zh_CN/htmledition/images/favicon/qqmail_favicon_32h.png');
+            var rightIcon = encodeURIComponent('/images2/comment_normal.png');
+
+            var left = 'null';
+            var right = '{"position":secondRight","type":"icon","content":"'+ rightIcon +'","callback":"callback.alert"}';
+            var secondRight = '{"position":right","type":"icon","content":"' + secondIcon + '","callback":"callback.alert"}';
+
+            window.open('jsbridge://JSInteract/setTitleBar/1/' + title + '/' + left + '/' + right + '/' + secondRight);
+        }
+
+        function setTitleBar7() {
+            var title = '原来是梦';
+            var secondIcon = encodeURIComponent('http://ww3.sinaimg.cn/small/6aa88161jw1f0pm3lyrk8j202001fa9u.jpg');
+            var rightIcon = encodeURIComponent('http://ww2.sinaimg.cn/small/6aa88161jw1f0pm3o3r5fj202701dwea.jpg');
+
+            var left = 'null';
+            var secondRight = 'null';
+            var right = '{"position":right","type":"text","content":"不是梦","callback":"callback.alert"}';
+
+            window.open('jsbridge://JSInteract/setTitleBar/1/' + title + '/' + left + '/' + right + '/' + secondRight);
+        }
+        function setTitleBar8() {
+            var title = '原来是梦';
+            var secondIcon = encodeURIComponent('http://ww3.sinaimg.cn/small/6aa88161jw1f0pm3lyrk8j202001fa9u.jpg');
+            var rightIcon = 'http://ww2.sinaimg.cn/small/6aa88161jw1f0pm3o3r5fj202701dwea.jpg';
+
+            var left = 'null';
+            var right = '{"position":secondRight","type":"icon","content":"'+ rightIcon +'","callback":"callback.alert"}';
+            var secondRight = 'null';
+            right = encodeURIComponent(right);
+
+            window.open('jsbridge://JSInteract/setTitleBar/1/' + title + '/' + left + '/' + right + '/' + secondRight);
+        }
+        function setTitleBar9() {
+            var title = '原来是梦';
+            var secondIcon = encodeURIComponent('http://ww3.sinaimg.cn/small/6aa88161jw1f0pm3lyrk8j202001fa9u.jpg');
+            var rightIcon = encodeURIComponent('http://ww2.sinaimg.cn/small/6aa88161jw1f0pm3o3r5fj202701dwea.jpg');
+
+            var left = 'null';
+            var right = 'null';
+            var secondRight = 'null';
+
+            window.open('jsbridge://JSInteract/setTitleBar/1/' + title + '/' + left + '/' + right + '/' + secondRight);
+        }
+
+        function setMenuItem1() {
+            var json = encodeURIComponent('[{"text":"分享","icon":"/images/tipclose.png","callback":"callback.alert"},{"text":"收藏","icon":"/images/voted.png","callback":"callback.alert"}]');
+            window.open('jsbridge://JSInteract/setMenuItem/1/' + json);
+        }
+
+        function setMenuItem2() {
+            var json = encodeURIComponent('[{"text":"呵呵","icon":"http://ww3.sinaimg.cn/small/6aa88161jw1f0pm3lyrk8j202001fa9u.jpg","callback":"callback.alert"},{"text":"哈哈","icon":"http://ww2.sinaimg.cn/small/6aa88161jw1f0pm3o3r5fj202701dwea.jpg","callback":"callback.alert"},{"text":"嘿嘿","icon":"https://mail.qq.com/zh_CN/htmledition/images/favicon/qqmail_favicon_32h.png","callback":"callback.alert"}]');
+            window.open('jsbridge://JSInteract/setMenuItem/1/' + json);
+        }
+
+
+
+        //loadPage的测试函数
+        function loadPage() {
+            var url = encodeURIComponent('http://www.qq.com');
+            var pageInfo = '{"loadType":1,"url":"' + url + '"}';
+            window.open('jsbridge://JSInteract/loadPage/1/' + pageInfo);
+        }
+
+        //dispatchTo的测试函数
+        function dispatchTo() {
+            var url = encodeURIComponent('uniteqqreader://webpage/http://iyuedu.qq.com/oppo/3_0_2/topicV2.html?tid=330075&adId=111027670&alg=9.1.1');
+            window.open('jsbridge://JSInteract/dispatchTo/1/' + url);
+        }
+
+        //作为回调函数使用,弹出一个toast告诉回调成功了。
+        function Callback(){
+            this.alert = function() {
+                if(arguments.length==0) {
+                    window.open('jsbridge://JSInteract/showToast/1/触发回调了');
+                }
+                else if(arguments.length==1){
+                    var str = encodeURIComponent(arguments[0]);
+                    window.open('jsbridge://JSInteract/showToast/1/自定义字段:' + str);
+                }
+            }
+        }
+        var callback = new Callback();
+
+        function JsBridge() {
+            this.callback = function(sn, res) {
+                if (res.result != 'undefined') {
+                    var str = encodeURIComponent(res.result);
+                    window.open('jsbridge://JSInteract/showToast/1/返回的结果：' + str);
+                }
+            }
+        }
+        var JsBridge = new JsBridge();
+
+
+        //JSAddToBookShelf
+        function add() {
+            window.open('jsbridge://JSAddToShelf/add/1/' + textJson);
+        }
+
+        function add2() {
+            window.open('jsbridge://JSAddToShelf/add2/1/' + textJson);
+        }
+
+        function addFromAdv() {
+            window.open('jsbridge://JSAddToShelf/addFromAdv/1/' + textJson);
+        }
+
+        function addBooks() {
+            var json = encodeURIComponent('{"bid":178975,"title":"校园绝品狂徒","author":"柳江南","downloadinfo":[]},{"bid":178975,"title":"校园绝品狂徒","author":"柳江南","downloadinfo":[]}');
+            window.open('jsbridge://JSAddToShelf/addBooks/1/' + json);
+        }
+
+        function addBook() {
+            window.open('jsbridge://JSAddToShelf/addBook/1/' + textJson);
+        }
+
+        function open111() {
+            var url = encodeURIComponent('http://www.qq.com');
+            var packageName = 'com.qq.reader.module.bookstore.qnative.activity.NativeBookStoreExclusiveRecommendActivity';
+            window.open('jsbridge://JSApp/open/1/' + url + '/' + packageName);
+        }
+
+        function open222() {
+            var url = encodeURIComponent('');
+            var packageName = '';
+            window.open('jsbridge://JSApp/open/1/' + url + '/' + packageName);
+        }
+
+        function dir00() {
+            window.open('jsbridge://bookdir/dir/1/' + textJson);
+        }
+
+        function bookAction() {
+
+        }
+
+        function openDetail() {
+            var url = encodeURIComponent('uniteqqreader://webpage/http://iyuedu.qq.com/oppo/3_0_2/topicV2.html?tid=330075&adId=111027670&alg=9.1.1');
+            window.open('jsbridge://JSContent/openDetail/1/' + url);
+        }
+
+        function openSoSo() {
+            var url = encodeURIComponent('http://www.qq.com');
+            window.open('jsbridge://JSContent/openSoSo/1/' + url);
+        }
+
+        function jumpTo() {
+            var url = encodeURIComponent('http://www.qq.com');
+            window.open('jsbridge://JSSwitchBrowser/jumpTo/1/' + url);
+        }
+
+        function sharePage() {
+            var pageUrl = encodeURIComponent('http://www.qq.com');
+            var imageUrl = encodeURIComponent('https://s3.51cto.com/wyfs02/M02/0E/95/wKiom1LOCMmgnr4PAAAjQEWPkYg532_middle.jpg');
+            var title = '这是一个标题';
+            var summery = '这是一个总结';
+            var tid = '2';
+            window.open('jsbridge://JSSns/sharePage/1/' + pageUrl + '/' + imageUrl + '/' + title + '/' + summery + '/' + tid);
+        }
+
+        function shareLuckyMoney() {
+            var pageUrl = encodeURIComponent('http://www.qq.com');
+            var imageUrl = encodeURIComponent('https://s3.51cto.com/wyfs02/M02/0E/95/wKiom1LOCMmgnr4PAAAjQEWPkYg532_middle.jpg');
+            var title = '这是一个标题';
+            var summery = '这是一个总结';
+            window.open('jsbridge://JSSns/shareLuckyMoney/1/' + pageUrl + '/' + imageUrl + '/' + title + '/' + summery);
+        }
+
+        function reloadUrl() {
+            var pageUrl = encodeURIComponent('http://www.qq.com');
+            window.open('jsbridge://JSReload/reloadUrl/1/' + pageUrl);
+        }
+
+        function readbook() {
+            window.open('jsbridge://readonline/readbook/1/' + textJson);
+        }
+		
+		function readbookOld11() {
+            window.open('jsbridge://readonline/readBookOld/1/' + textJson);
+        }
+
+        function showDialog() {
+            var title = '提示';
+            var content = '打开www.qq.com';
+            var confirmText = '确定';
+            var actionCode = '1000';
+            var actionUrl = encodeURIComponent('http://www.qq.com');
+            window.open('jsbridge://JsPopUpDialog/showDialog/1/' + title + '/' + content + '/' + confirmText + '/' + actionCode + '/' + actionUrl);
+        }
+		
+		function showDialog0() {
+            var title = '提示';
+            var content = '打开www.qq.com';
+            var confirmText = '确定';
+            var actionCode = '1000';
+            var actionUrl = encodeURIComponent('http://www.qq.com');
+            window.open('jsbridge://JSDialog/showDialog/1/' + title + '/' + content + '/' + confirmText + '/' + actionCode + '/' + actionUrl);
+        }
+		
+		function payDone1() {
+			window.open('jsbridge://pay/payDone/1/' + textJson1);
+		}
+
+        function reCharge() {
+            var pageUrl = encodeURIComponent('http://www.qq.com');
+            window.open('jsbridge://pay/reCharge/1/清仓大甩卖/' + pageUrl);
+        }
+
+        function login0() {
+            var pageUrl = encodeURIComponent('http://www.qq.com');
+            window.open('jsbridge://readerlogin/login/1/' + pageUrl);
+        }
+
+        function login11() {
+            var pageUrl = encodeURIComponent('http://www.qq.com');
+            var type = '1';
+            window.open('jsbridge://readerlogin/login/1/' + pageUrl + '/' + type);
+        }
+
+        function open_ucenter() {
+            var pageUrl = encodeURIComponent('http://www.qq.com');
+            window.open('jsbridge://readerlogin/open_ucenter/1/' + pageUrl);
+        }
+
+        function batdownload() {
+            window.open('jsbridge://downloadbook/batdownload/1/' + textJson);
+        }
+
+        function download1() {
+            var bookformat = 'teb';
+            var formatversion = '2';
+            window.open('jsbridge://downloadbook/download/1/' + textJson + '/' + bookformat + '/' + formatversion);
+        }
+
+        function openDetail11() {
+            var pageUrl = encodeURIComponent('http://www.qq.com');
+            window.open('jsbridge://JSDetail/openDetail/1/' + pageUrl);
+        }
+
+        function openExternal() {
+            var pageUrl = encodeURIComponent('{"url":"http://www.qq.com"}');
+            window.open('jsbridge://JSContent/openExternal/1/' + pageUrl);
+        }
+
+        function getToalUrl() {
+            var pageUrl = encodeURIComponent('http://www.qq.com');
+            window.open('jsbridge://JSContent/openExternal/1/' + pageUrl);
+        }
+		
+		function buyBook1() {
+            window.open('jsbridge://pay/buyBook/1/' + textJson + '/' + callback.alert);
+		}
+		
+		function buyBook2() {
+            window.open('jsbridge://pay/buyBook/1/' + textJson);
+		}
+
+</script>
+</head>
+<body>
+
+<h1>选择文件测试</h1>
+<input type="file" accept="image/*"/>
+
+<h1>长按图片测试</h1>
+<img height="200" width="200" src="https://upload-images.jianshu.io/upload_images/533496-3b22abe881248b29.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="">
+
+<h1><a href="https://pages.book.qq.com/op/month.html">开通包月活动测试</a> </h1>
+<h1>V2的测试链接</h1>
+
+<h1>deeplink测试</h1>
+<h1><a href="weixin://dl/scan/?&openinsystem=true">deeplink测试</a></h1>
+
+<h1>JSCharge测试</h1>
+<h1><a href="jsbridge://JSCharge/charge/1/500/callback.alert">charge 500书币</a></h1>
+<h1><a href="jsbridge://JSCharge/charge/1/1.5/callback.alert">charge 1.5书币（错误示例）</a></h1>
+<h1><a href='jsbridge://JSCharge/openMonthVip/1/{"month":"1","money":"1","isAutoPay":"true"}/callback.alert'>开通包月示例</a></h1>
+
+<h1><a href='jsbridge://JSCharge/openMonthActivity/1/93/2/callback.alert'>开通包月活动，试用7天包月</a> </h1>
+
+<h1>JSCunponTree测试</h1>
+<h1><a href="jsbridge://JSCouponTree/getBookList/1">getBookList</a></h1>
+<h1><a href="jsbridge://JSCouponTree/isPick/1/2">isPick</a></h1>
+<h1><a href="jsbridge://JSCouponTree/treeParam/1">treeParam</a></h1>
+
+<h1>JSUtils测试</h1>
+<h1><a href="jsbridge://JSUtils/checkUpdate/1/1">checkUpdate</a></h1>
+<h1><a href="jsbridge://JSUtils/getDeviceModel/1">getDeviceModel</a></h1>
+<h1><a href="jsbridge://JSUtils/getAppInfo/1">getAppInfo</a></h1>
+<h1><a href="jsbridge://JSUtils/getQIMEI/1">getQIMEI</a></h1>
+
+
+<h1>JSUser测试</h1>
+<h1><a href="jsbridge://JSUser/getWebLike/1">getWebLike</a></h1>
+<h1><a href="jsbridge://JSUser/getGselect/1">getGselect</a></h1>
+<h1><a href="jsbridge://JSUser/login/1/callback.alert">login</a></h1>
+<h1><a href="jsbridge://JSUser/logout/1/callback.alert">logout</a></h1>
+<h1><a href="jsbridge://JSUser/isLogin/1">isLogin</a></h1>
+<h1><a href="jsbridge://JSUser/getUserInfo/1/callback.alert">getUserInfo</a></h1>
+<h1><a href="jsbridge://JSUser/openVip/1/callback.alert">openVip</a></h1>
+<h1><a href="jsbridge://JSUser/chargeBookCoin/1/callback.alert">chargeBookCoin</a></h1>
+<h1><a href='jsbridge://JSUser/returnSelectedCoupon/1/{"couponId":"1","couponName":"一天券","couponType":"限免券"}'>returnSelectedCoupon</a></h1>
+
+
+<h1>JSBook测试</h1>
+<h1><a href="jsbridge://JSBook/getLocalBookList/1">getLocalBookList</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="jsbookaddBook()">addBook</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="jsbookaddBook2()">addAudioBook(addBook)</a></h1>
+<h1><a href="jsbridge://JSBook/delBook/1/849861/callback.alert">delBook</a></h1>
+<h1><a href="jsbridge://JSBook/findBook/1/849861/callback.alert">findBook</a></h1>
+<h1><a href="jsbridge://JSBook/readBook/1/849861">readBook</a></h1>
+<h1><a href="jsbridge://JSBook/openBookDir/1/849861">openBookDir</a></h1>
+<h1><a href="jsbridge://JSBook/downloadBook/1/849861">downloadBook(暂时没写)</a></h1>
+<h1><a href="jsbridge://JSBook/downloadChapter/1/849861">downloadChapter</a></h1>
+<h1><a href="jsbridge://JSBook/listenAudio/1/90000222">listenAudio</a></h1>
+<h1><a href="jsbridge://JSBook/openAudioDir/1/90000222">openAudioDir</a></h1>
+
+
+<h1>JSStorage测试</h1>
+<h1><a href="jsbridge://JSStorage/insert/1/version/0.0.1">储存key</a></h1>
+<h1><a href="jsbridge://JSStorage/select/1/version/callback.alert">获取value</a></h1>
+<h1><a href="jsbridge://JSStorage/update/1/version/0.0.2">修改value</a></h1>
+<h1><a href="jsbridge://JSStorage/delete/1/version">删除一条数据</a></h1>
+<h1><a href="jsbridge://JSStorage/clear/1">清除数据库</a></h1>
+
+<h1>JSInteract测试</h1>
+<h1><a href="jsbridge://JSInteract/showToast/1/hehehe">toast</a></h1>
+<h1><a href="jsbridge://JSInteract/showDialog/1/提醒/你中了五百万/不信:callback.alert/信了:callback.alert">dialog2</a></h1>
+<h1><a href="jsbridge://JSInteract/showDialog/1/提醒/你中了五百万/给我！:callback.alert/null">dialog1</a></h1>
+<h1><a href="jsbridge://JSInteract/showDialog/1/提醒/你中了五百万/null/null">dialog0</a></h1>
+<h1><a href="jsbridge://JSInteract/setTitleBar/1/哈哈哈真的中了">设置标题</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="setTitleBar1()">设置标题1：文图文</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="setTitleBar2()">设置标题2：图文图</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="setTitleBar3()">设置标题3：null文文</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="setTitleBar4()">设置标题4：null文文</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="setTitleBar5()">设置标题5：null图图</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="setTitleBar6()">设置标题6：null图图</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="setTitleBar61()">设置标题61：null图图</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="setTitleBar7()">设置标题7：nullnull文</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="setTitleBar8()">设置标题8：nullnull图</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="setTitleBar9()">设置标题9：nullnullnull</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="setMenuItem1()">设置menu1</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="setMenuItem2()">设置menu2</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="loadPage()">打开页面</a></h1>
+<h1><a href='jsbridge://JSInteract/reload/1'>重新加载</a></h1>
+<h1><a href='jsbridge://JSInteract/finishActivity/1'>关闭页面</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="dispatchTo()">dispatchTo</a></h1>
+
+<h1>V1的测试链接</h1>
+<h4>简单的过了一遍，还需要再次查验处理</h4>
+<h1>AndroidJS</h1>
+<h1><a href='jsbridge://AndroidJS/pageAction/1/webjson'>pageAction(待处理)</a></h1>
+
+<h1>JSAddToBookShelf</h1>
+<h1><a href="JavaScript:void(0)" onclick="add()">add</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="add2()">add2</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="addFromAdv()">addFromAdv(待处理)</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="addBooks()">addBooks</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="addBook()">addBook</a></h1>
+<h1><a href='jsbridge://JSAddToShelf/addById/1/849861'>addById</a></h1>
+
+
+<h1>JsAdEvent</h1>
+<h1><a href='jsbridge://JsAdEvent/setStart/1/haha'>setStart</a></h1>
+<h1><a href='jsbridge://JsAdEvent/setEnd/1/hehe'>setEnd</a></h1>
+
+
+
+<h1>JSAdv</h1>
+<h1><a href="JavaScript:void(0)">showAdv(这个的代码被注释掉了)</a></h1>
+<h1><a href='jsbridge://JSAdv/closeAdv/1'>closeAdv</a></h1>
+<h1><a href='jsbridge://JSAdv/closerefresh/1'>closerefresh</a></h1>
+
+<h1>JSAPP</h1>
+<h1><a href='jsbridge://JSApp/log/1/haha'>log</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="open111()">open</a></h1>
+<h1><a href='jsbridge://JSApp/isAppExist/1/com.sina.weibo'>isAppExist</a></h1>
+
+<h1>JSBookDir</h1>
+<h1><a href="JavaScript:void(0)" onclick="dir00()">dir</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="bookAction()">bookAction(待处理)</a></h1>
+<h1><a href='jsbridge://bookdir/getBookList/1/5'>getBookList</a></h1>
+<h1><a href='jsbridge://bookdir/onClickBook/1/849861'>onClickBook</a></h1>
+
+<h1>JSBuyChapters</h1>
+<h4>这个类现在啥都没有</h4>
+
+<h1>JSContent</h1>
+<h1><a href='jsbridge://JSContent/setStatInfo/1/{"pagename":"NativeServerSearchToolPage"}'>setStatInfo</a></h1>
+<h1><a href='jsbridge://JSContent/setIsBackToPage/1/true'>setIsBackToPage</a></h1>
+<h1><a href='jsbridge://JSContent/setWebTitlebarIcon/1/[{"title":"addFavor","callback":"addFavor","status":0},{"title":"shareTopic","callback":"shareTopic"}]'>setWebTitlebarIcon</a></h1>
+<h1><a href='jsbridge://JSContent/hideWebTitlebarIcon/1/[{"title":"hideFavor","callback":"addFavor","status":0},{"title":"hideTopic","callback":"shareTopic"}]'>hideWebTitlebarIcon</a></h1>
+<h1><a href='jsbridge://JSContent/openTopicComment/1/2/2'>openTopicComment</a></h1>
+<h1><a href='jsbridge://JSContent/openTopicDiscuss/1/2/2'>openTopicDiscuss</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="openDetail()">openDetail</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="openSoSo()">openSoSo</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="openExternal()">openExternal</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="getToalUrl()">getToalUrl</a></h1>
+<h1><a href='jsbridge://JSContent/openMonthly/1/{"packageid":"800028"}'>openMonthly</a></h1>
+<h1><a href='jsbridge://JSContent/getAllActInfo/1'>getAllActInfo</a></h1>
+<h1><a href='jsbridge://JSContent/getUserReadBookId/1'>getUserReadBookId</a></h1>
+<h1><a href='jsbridge://JSContent/getDeviceModel/1'>getDeviceModel</a></h1>
+
+
+
+<h1>JsCoupon</h1>
+<h1><a href='jsbridge://JsCoupon/returnSelectedCoupon/1/{"couponId":"6490413133547110407","name":"7天限免券","couponType":1}'>returnSelectedCoupon</a></h1>
+<h1><a href='jsbridge://JsCoupon/jumpToCoupon/1/{"index":"1"}'>jumpToCoupon</a></h1>
+
+
+<h1>JSDetail</h1>
+<h1><a href="JavaScript:void(0)" onclick="openDetail11()">openDetail</a></h1>
+
+
+<h1>JSDialog</h1>
+<h1><a href='jsbridge://JSDialog/showSimpleDialog/1/标题/这里是信息/不确定'>showSimpleDialog</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="showDialog0()">showDialog(和JsPopUpDialog里的showDialog完全相同)</a></h1>
+<h1><a href='jsbridge://JSDialog/showBottomDialog/1/{"pagecode":"1001","title":"提示","positiestr":"不确定","negetivestr":"不取消","content":"这是我们的船"}'>showBottomDialog</a></h1>
+<h1><a href='jsbridge://JSDialog/addRewardComment/1/19475809/1/这本书不错我很满意'>addRewardComment</a></h1>
+<h1><a href='jsbridge://JSDialog/showLuckyMoneyDialog/1/json'>showLuckyMoneyDialog(函数是空的)</a></h1>
+
+
+<h1>JSDownLoad</h1>
+<h1><a href="JavaScript:void(0)" onclick="batdownload()">batdownload</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="download0()">download(旧版本，已被丢弃)</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="download1()">download</a></h1>
+
+
+<h1>JSGame</h1>
+<h4>这个整个被注释掉了</h4>
+
+<h1>JSGoToWeb</h1>
+<h1><a href='jsbridge://JSGoToWeb/gotoWeb/1'>gotoWeb</a></h1>
+
+
+<h1>JSLocalStorage</h1>
+<h1><a href='jsbridge://JSLocalStorage/put/1/key/value'>put</a></h1>
+<h1><a href='jsbridge://JSLocalStorage/remove/1/key'>remove</a></h1>
+<h1><a href='jsbridge://JSLocalStorage/get/1/key'>get</a></h1>
+
+
+<h1>JSLogin</h1>
+<h1><a href='jsbridge://readerlogin/login/1'>login</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="login0()">login带加载链接</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="login11()">login带加载链接和type</a></h1>
+<h1><a href='jsbridge://readerlogin/checkLogout/1'>checkLogout(函数是空的)</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="open_ucenter()">open_ucenter</a></h1>
+<h1><a href='jsbridge://readerlogin/logout/1'>logout</a></h1>
+<h1><a href='jsbridge://readerlogin/toLogin/1'>toLogin</a></h1>
+
+
+
+<h1>JSPay</h1>
+<h1><a href='jsbridge://pay/openVip/1'>openVip</a></h1>
+<h1><a href='jsbridge://pay/charge/1/json'>charge(实际上json并没有用上)</a></h1>
+<h1><a href='jsbridge://pay/charge/1/json/10'>charge包含数量(实际上json并没有用上)</a></h1>
+<h1><a href='jsbridge://pay/beforepay/1/{"id":"849861","origin":"channel"}'>beforepay</a></h1>
+<h1><a href='jsbridge://pay/afterpay/1/{"code":"849861","message":"channel"}'>afterpay</a></h1>
+<h1><a href='jsbridge://pay/doPay/1/清仓大甩卖'>doPay</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="reCharge()">reCharge</a></h1>
+<h1><a href='jsbridge://pay/doSucceed/1/{"id":"1","message":"下载成功"}'>doPay)</a></h1>
+<h1><a href='jsbridge://pay/doDone/1/1'>doDone</a></h1>
+<h1><a href='jsbridge://pay/setPayOption/1/{"autopay":"1"}'>setPayOption</a></h1>
+<h1><a href='jsbridge://pay/payCancel/1'>payCancel</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="payDone1()">payDone1</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="payDone2()">payDone2</a></h1>
+<h1><a href='jsbridge://pay/payDone/1/json'>payDone3</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="buyBook1()">buyBook1</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="buyBook2()">buyBook2</a></h1>
+
+
+
+<h1>JsPopUpDialog</h1>
+<h1><a href="JavaScript:void(0)" onclick="showDialog()">showDialog</a></h1>
+
+
+<h1>JSReadMusicOnline</h1>
+<h1><a href='jsbridge://JSReadMusicOnline/downloadbook/1/{"bid": 1, "bname": "公交囧事", "author": "话匣子", "reader": "昊儒", "btime":"01:25", "price": "100元宝"}'>downloadbook</a></h1>
+<h1><a href='jsbridge://JSReadMusicOnline/readmusic/1'>readmusic</a></h1>
+
+
+
+<h1>JSReadOnline</h1>
+<h1><a href="JavaScript:void(0)" onclick="readbook()">readbook</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="readbookOld11()">旧的readbook</a></h1>
+<h1><a href='jsbridge://JSReadOnline/onsreach/1/斗破'>onsreach</a></h1>
+
+
+<h1>JSReload</h1>
+<h1><a href='jsbridge://JSReload/retry/1'>retry</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="reloadUrl()">reloadUrl(函数是空的)</a></h1>
+
+
+<h1>JSSearch</h1>
+<h1><a href='jsbridge://JSSearch/doSearch/1/{"keyword":"斗破"}'>doSearch</a></h1>
+
+
+<h1>JSSendSmS</h1>
+<h1><a href='jsbridge://sendvip/send/1/18201728568/吃了吗？'>send(函数是空的)</a></h1>
+<h1><a href='jsbridge://sendvip/setvip/1/1143878968/船/true'>setvip</a></h1>
+<h1><a href='jsbridge://sendvip/tovipview/1'>tovipview</a></h1>
+
+
+<h1>JSSns</h1>
+<h1><a href='jsbridge://JSSns/shareBook/1/849861/冰与火之歌'>shareBook</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="sharePage()">sharePage</a></h1>
+<h1><a href="JavaScript:void(0)" onclick="shareLuckyMoney()">shareLuckyMoney</a></h1>
+
+<h1>JsSubscribe</h1>
+<h1><a href='jsbridge://JsSubscribe/doSubscribe/1/20001'>doSubscribe</a></h1>
+<h1><a href='jsbridge://JsSubscribe/getSubscribedInDb/1/20001'>getSubscribedInDb</a></h1>
+
+<h1>JSSwitchBrowser</h1>
+<h1><a href="JavaScript:void(0)" onclick="jumpTo()">jumpTo</a></h1>
+
+<h1>JSToast</h1>
+<h1><a href='jsbridge://JSToast/showToast/1/呔'>showToast</a></h1>
+<h1><a href='jsbridge://JSToast/showToast/1'>showToast</a></h1>
+<h1><a href='jsbridge://JSToast/showProgress/1/呵呵'>showProgress</a></h1>
+<h1><a href='jsbridge://JSToast/cancelProgress/1'>cancelProgress</a></h1>
+
+
+<h1>JSHwAdg</h1>
+<h1><a href='jsbridge://JsHwAdg/getClientConfig/1/callback.alert'>getClientConfig</a></h1>
+<h1><a href='jsbridge://JsHwAdg/connect/1/callback.alert'>connect</a></h1>
+<h1><a href='jsbridge://JsHwAdg/disconnect/1'>disconnect</a></h1>
+<h1><a href="JavaScript: agd_start_download(download_app_1,download_app_param_1);">start_download(App1)</a></h1>
+<h1><a href="JavaScript: agd_pause_download(download_app_1);">pause_download(App1)</a></h1>
+<h1><a href="JavaScript: agd_resume_download(download_app_1);">resume_download(App1)</a></h1>
+<h1><a href="JavaScript: agd_cancel_download(download_app_1);">cancel_download(App1)</a></h1>
+<h1><a href="JavaScript: agd_register_download_listener(download_app_1);">注册下载监听(App1)</a></h1>
+<h1><a href="JavaScript: agd_unregister_download_listener(download_app_1);">注销下载监听(App1)</a></h1>
+<h1><a href="JavaScript: agd_start_download(download_app_2,download_app_param_2);">start_download(App2)</a></h1>
+<h1><a href="JavaScript: agd_register_download_listener(download_app_2);"> 注册下载监听(App2)</a></h1>
+
+<h1><a href="JavaScript: agd_reportEvent();"> reportEvent()</a></h1>
+<h1><a href='jsbridge://JsHwAdg/queryTask/1/callback.alert'>queryTask</a></h1>
+
+
+<h1><a href="JavaScript: mClient_postHeader();"> mClient.postWithHeader</a></h1>
+
+
+
+
+<h1>JSUpdate</h1>
+<h1><a href='jsbridge://JSUpdate/update/1'>JSUpdate(函数是空的)</a></h1>
+<h1><a href='jsbridge://JSUpdate/showhelp/1'>showhelp</a></h1>
+<h1><a href='jsbridge://JSUpdate/isLatestApkReady/1'>isLatestApkReady</a></h1>
+<h1><a href='jsbridge://JSUpdate/startDownloadApk/1'>startDownloadApk(函数是空的)</a></h1>
+<h1><a href='jsbridge://JSUpdate/getDownloadStatus/1'>getDownloadStatus</a></h1>
+<h1><a href='jsbridge://JSUpdate/startInstall/1'>startInstall(函数是空的)</a></h1>
+
+
+<h1>JSbookshelf</h1>
+<h1><a href='jsbridge://JSbookshelf/bookAction/1/{"actionCode":"1000","range":"1"}'>bookAction1</a></h1>
+<h1><a href='jsbridge://JSbookshelf/bookAction/1/{"actionCode":"1001","bid":"849861"}'>bookAction2</a></h1>
+<h1><a href='jsbridge://JSbookshelf/bookAction/1/{"actionCode":"1004","range":"1"}'>bookAction3</a></h1>
+
+</body>
+<script type="text/javascript">
+
+        var download_app_1 = 'com.xingin.xhs'
+        var download_app_param_1 = '{"detailId": "app|C10194368__HiAd__e131bda1f6834735a79263b6c3157c25__ncds_376__2__null____null?maple=0&trackId=0&attribution=%7B%22callback%22%3A%22security%3AC0E97D288DC6BFC842C39E00%3ACF98C8B035EE784902189FBBE5BD15F1A0007458B650207D025265F53A261287221D4DA9DD0F5C86BEDF4C5CB107BD5CA15034CF95C5795E17551077044DADDD60ECA2F35A6B7CEBAFD2B4F31FC34096DAD5A84739CF2F34A5EB%22%2C%22taskid%22%3A%22600690884%22%2C%22subTaskId%22%3A%22%22%2C%22RTAID%22%3A%22%22%2C%22channel%22%3A%22213082%22%7D&experiment=subExpDes%3Dubr_usedapp_resample20_baseline_servicetype_62%23expStrategy%3D64153%23expParams%3Docpd_new_annual_download_conversion_action_new%23subExpId%3Dubr_usedapp_resample20_baseline_servicetype_62%23subExpParams%3Dubr_usedapp_resample20_baseline_servicetype_62%23bucketId%3D-1%23expDes%3Docpd_new_annual_download_conversion_action_new%23expId%3Dubr_usedapp_resample20_baseline_servicetype_62%7Cocpd_new_annual_download_conversion_action_new&appoid=3756c2564c0e4205a7c7c633de9533b1&listId=ncds_376&listIdType=ncds&adFlag=HiAd&cdrInfo=202111011446194l0fw914021%5E%7BopType%7D%5E600690884%5EC10194368%5Encds_376%5E2%5E609388165586697755_p2%5E609388165586697755%5Ecc83d7fd8ec1adfbdd11717d2304879e1efe7211754fb4cb63fcc0d05e9a1c562863478b583537214efa43a11551f11142914c3c77d6cdc1109c7013a45fc7fef909b26f490f2dd795700a5d38828718e25d9c37ffe4d4b1070258c90f0c1c7b%5Ectr%5E%5E2021-11-01+14%3A46%3A19%5E%5Ep40pro%5E0.001564%5E0%5E0.6%5E0.6%5E%5E600004864%5E20358%5E%5E%5E%5E%5E1635749179760%5E0%5E1%5E%5E%5E%5E9%5Efe00b4e4-751d-4185-b595-ebb8ac592fbb%5E1%5E%5E%5ECN%5ECNY%5EANDROID_ENCOURAGE%5EReaderYWapk_CPD%5E%5E%5E%5E1231232143243254545435466546758%5ECPD%5E22%5E%5E%5E609388165602891818%5E%5EMjEzMDgy%5E%5Ec3ViRXhwRGVzPXVicl91c2VkYXBwX3Jlc2FtcGxlMjBfYmFzZWxpbmVfc2VydmljZXR5cGVfNjIjZXhwU3RyYXRlZ3k9NjQxNTMjZXhwUGFyYW1zPW9jcGRfbmV3X2FubnVhbF9kb3dubG9hZF9jb252ZXJzaW9uX2FjdGlvbl9uZXcjc3ViRXhwSWQ9dWJyX3VzZWRhcHBfcmVzYW1wbGUyMF9iYXNlbGluZV9zZXJ2aWNldHlwZV82MiNzdWJFeHBQYXJhbXM9dWJyX3VzZWRhcHBfcmVzYW1wbGUyMF9iYXNlbGluZV9zZXJ2aWNldHlwZV82MiNidWNrZXRJZD0tMSNleHBEZXM9b2NwZF9uZXdfYW5udWFsX2Rvd25sb2FkX2NvbnZlcnNpb25fYWN0aW9uX25ldyNleHBJZD11YnJfdXNlZGFwcF9yZXNhbXBsZTIwX2Jhc2VsaW5lX3NlcnZpY2V0eXBlXzYyfG9jcGRfbmV3X2FubnVhbF9kb3dubG9hZF9jb252ZXJzaW9uX2FjdGlvbl9uZXc%5E1%5E%5E%5E1%5E1%5E%5E%5E%5E%5E0%5E%5E%5E%5E%5Esign%3A48f55a44008cbe2f3825012febf996be26b7471e9c2b170b2069c3a1b61903be&version=2&appserveType=0&phase=0","partnerId": "a5aa9046d42e11eba538fa163ebc0cda"}'
+
+        var download_app_2 = 'com.ganji.android'
+        var download_app_param_2 = '{"detailId": "app|C1952__HiAd__e131bda1f6834735a79263b6c3157c25__ncds_376__5__null____null?maple=0&trackId=0&experiment=subExpDes%3Dubr_usedapp_resample20_baseline_servicetype_62%23expStrategy%3D64153%23expParams%3Docpd_new_annual_download_conversion_action_new%23subExpId%3Dubr_usedapp_resample20_baseline_servicetype_62%23subExpParams%3Dubr_usedapp_resample20_baseline_servicetype_62%23bucketId%3D-1%23expDes%3Docpd_new_annual_download_conversion_action_new%23expId%3Dubr_usedapp_resample20_baseline_servicetype_62%7Cocpd_new_annual_download_conversion_action_new&appoid=7f69a75d3e91411fa9c39fa7774efe89&listId=ncds_376&listIdType=ncds&adFlag=HiAd&cdrInfo=202111011446194l0fw914024%5E%7BopType%7D%5E600642978%5EC1952%5Encds_376%5E5%5E609388165586697755_p5%5E609388165586697755%5Ecc83d7fd8ec1adfbdd11717d2304879e1efe7211754fb4cb63fcc0d05e9a1c562863478b583537214efa43a11551f11142914c3c77d6cdc1109c7013a45fc7fef909b26f490f2dd795700a5d38828718e25d9c37ffe4d4b1070258c90f0c1c7b%5Ectr%5E%5E2021-11-01+14%3A46%3A19%5E%5Ep40pro%5E0.000236%5E0%5E2.0%5E2.0%5E%5E600006308%5E20358%5E%5E%5E%5E%5E1635749179760%5E0%5E1%5E%5E%5E%5E9%5Efe00b4e4-751d-4185-b595-ebb8ac592fbb%5E1%5E%5E%5ECN%5ECNY%5EANDROID_ENCOURAGE%5EReaderYWapk_CPD%5E%5E%5E%5E1231232143243254545435466546758%5ECPD%5E22%5E%5E%5E609388165602891818%5E%5EMA%5E%5Ec3ViRXhwRGVzPXVicl91c2VkYXBwX3Jlc2FtcGxlMjBfYmFzZWxpbmVfc2VydmljZXR5cGVfNjIjZXhwU3RyYXRlZ3k9NjQxNTMjZXhwUGFyYW1zPW9jcGRfbmV3X2FubnVhbF9kb3dubG9hZF9jb252ZXJzaW9uX2FjdGlvbl9uZXcjc3ViRXhwSWQ9dWJyX3VzZWRhcHBfcmVzYW1wbGUyMF9iYXNlbGluZV9zZXJ2aWNldHlwZV82MiNzdWJFeHBQYXJhbXM9dWJyX3VzZWRhcHBfcmVzYW1wbGUyMF9iYXNlbGluZV9zZXJ2aWNldHlwZV82MiNidWNrZXRJZD0tMSNleHBEZXM9b2NwZF9uZXdfYW5udWFsX2Rvd25sb2FkX2NvbnZlcnNpb25fYWN0aW9uX25ldyNleHBJZD11YnJfdXNlZGFwcF9yZXNhbXBsZTIwX2Jhc2VsaW5lX3NlcnZpY2V0eXBlXzYyfG9jcGRfbmV3X2FubnVhbF9kb3dubG9hZF9jb252ZXJzaW9uX2FjdGlvbl9uZXc%5E%5E%5E%5E1%5E1%5E%5E%5E%5E%5E0%5E%5E%5E%5E%5Esign%3A4c21e53e6cb73d9c95f5d38d25c9d6f0cc344b3f5643dda818d8b8787336c64b&version=2&appserveType=0&phase=0","partnerId": "a5aa9046d42e11eba538fa163ebc0cda"}'
+
+        function agd_start_download(pkg,param) {
+            var json = encodeURIComponent('{"mPackageName":"'+ pkg + '"}');
+            var downParam = encodeURIComponent(param);
+            window.open('jsbridge://JsHwAdg/startDownload/1/' + json + '/' + downParam +'/callback.alert');
+        }
+
+        function agd_pause_download(pkg) {
+            var json = encodeURIComponent('{"mPackageName":"'+ pkg + '"}');
+            window.open('jsbridge://JsHwAdg/pauseDownload/1/' + json + '/callback.alert');
+        }
+
+        function agd_resume_download(pkg) {
+            var json = encodeURIComponent('{"mPackageName":"'+ pkg + '"}');
+            window.open('jsbridge://JsHwAdg/resumeDownload/1/' + json + '/callback.alert');
+        }
+
+        function agd_cancel_download(pkg) {
+            var json = encodeURIComponent('{"mPackageName":"'+ pkg + '"}');
+            window.open('jsbridge://JsHwAdg/cancelDownload/1/' + json + '/callback.alert');
+        }
+
+        function agd_register_download_listener(pkg) {
+            window.open('jsbridge://JsHwAdg/registerDownloadListener/1/' + pkg + '/');
+        }
+
+        function agd_unregister_download_listener(pkg) {
+            window.open('jsbridge://JsHwAdg/unregisterDownloadListener/1/' + pkg);
+        }
+
+
+        function agd_reportEvent() {
+            var json = encodeURIComponent('{}');
+            window.open('jsbridge://JsHwAdg/reportEvent/1/1/' + json);
+        }
+
+        function mClient_postHeader() {
+            var url = encodeURIComponent('https://connect-api.cloud.huawei.com/api/mas/v1/media/open/query');
+            var header = '{"client_id":"689115812010672768","Authorization":"Bearer eyJraWQiOiJ6MktUWkdvbW1kTEZNRUtEVnUzRk5uaDJiSWtRWml5ZyIsInR5cCI6IkpXVCIsImFsZyI6IkhTMjU2In0.eyJzdWIiOiI2ODkxMTU4MTIwMTA2NzI3NjgiLCJkbiI6MSwiY2xpZW50X3R5cGUiOjEsImV4cCI6MTYzNTk0MTMyNywiaWF0IjoxNjM1NzY4NTI3fQ.aH0td3wxTtZ4ltLfr0OJ7wUgZ2k9oNisWQ72Z_QdIhQ"}'
+            var headerContent = encodeURIComponent(header)
+            var content = '{"requestId":"1231232143243254545435466546758","apiVersion":"1.0","adSlot":{"slotId":"6iZZNDyXmW1","adCount":20,"installedApp":3,"downloadType":1,"pageNumber":1,"lastItemIds":[],"personalize":1,"keywords":"","installType":6},"deviceInfo":{"deviceModel":"EVA-AL10","locale":"zh-Hans-CN","country":"CN","oaid":"fe00b4e4-751d-4185-b595-ebb8ac592fbb","udid":"20EF63FB8616F9EB56AED1432A81608CF384E9C6225AE8978AB3E8E91621AB22","deviceId":"20EF63FB8616F9EB56AED1432A81608CF384E9C6225AE8978AB3E8E91621AB22","deviceType":"0","manufacturer":"","mcc":"","andriodApiLevel":"","harmonyApiLevel":"","emuiApiLevel":"","emuiVersion":"","gmsSupport":"1"},"networkInfo":{"connectType":0,"carrier":0,"plmn":""},"mediaInfo":{"mediaPkgName":"com.huawei.hnreader","mediaVersion":"1.0"}}'
+            var contentValue = encodeURIComponent(content)
+            window.open('jsbridge://mclient/postWithHeader/1/' + url+ '/' + headerContent +'/callback.alert/1/' + contentValue);
+        }
+
+
+
+
+</script>
+</html>

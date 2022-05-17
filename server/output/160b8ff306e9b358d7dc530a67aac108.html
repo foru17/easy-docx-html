@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8" />
+            <meta
+                name="viewport"
+                content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"
+            />
+            <title>Method</title>
+            <meta http-equiv="Cache-Control" content="no-cache" />
+            <meta http-equiv="Pragma" content="no-cache" />
+            <meta http-equiv="expires" content="0" />
+            <meta name="format-detection" content="telephone=no" />
+            <meta name="apple-mobile-web-app-capable" content="yes" />
+            <meta name="applicable-device" content="mobile" />
+            <style>
+            body {
+                color: #384369;
+                background: #fff;
+                margin: 0;
+                font-size: 3.7333vw;
+                display: flex;
+                flex-direction: column;
+                overflow-x: hidden;
+                margin:0 auto;
+                padding:3vw;
+            }
+            p{
+                border: none;
+                margin: 0;
+                padding: 0;
+                line-height:6vw;
+                margin-bottom:1vw
+            }
+            .container>p:first-child{
+                width: 100%;
+                text-align: center;
+                font-size: 5.8667vw;
+                font-weight: 700;
+                margin-top: 5vw;
+                margin-bottom: 7vw;
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                overflow-x: hidden;
+                /* padding: 5.3333vw; */
+                background: #fff;
+                -webkit-overflow-scrolling: touch;
+            }
+            .center{
+                text-align: center;
+            }
+            pre {
+                font-size: 3.2vw;
+                transform: scale(0.8);
+                transform-origin: 0;
+            }
+    
+            .title {
+                width: 100%;
+                text-align: center;
+                font-size: 5.8667vw;
+                font-weight: 700;
+                margin-top: 5vw;
+                margin-bottom: 7vw;
+            }
+    
+            .service-wrap-title {
+                color: #384369;
+                font-size: 4.2667vw;
+                display: inline-block;
+                padding: 1.3333vw 0;
+                font-weight: 600;
+            }
+    
+            .service-wrap-ele {
+                margin: 0;
+                color: #384369;
+                padding-bottom: 0;
+            }
+    
+            .service-wrap-ele span {
+                min-width: 12vw;
+                display: inline-block;
+                text-align: center;
+                border-bottom: solid 1px;
+                line-height: 0.9;
+                padding: 0 6px;
+            }
+    
+            table {
+                color: #384369;
+                border-right: 0.2667vw solid #384369;
+                border-color: #384369;
+                border-collapse: collapse;
+                border-spacing: 0;
+                margin: 2vw 0;
+                width: 100%;
+                box-sizing:border-box;
+            }
+    
+            table td {
+                border-left: 0.2667vw solid #384369;
+                border-top: 0.2667vw solid #384369;
+                width: 53.3333vw;
+                text-align: left;
+                height: 9.3333vw;
+            }
+            
+            th{
+                text-align: center !important;
+            }
+
+            tr>td:first-child strong {
+                text-align: center !important;
+                width: 100%;
+                display: block;
+            }
+        
+            th,
+            td {
+            padding: 0 1.2vw;
+            font-weight: normal;
+            word-wrap: break-word;
+            word-break: break-all;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            }
+        
+            .bottom-btn-container {
+                height: 13.3333vw;
+                background: #fff;
+                border-top: 0.1333vw solid #f0eded;
+                display: flex;
+                justify-content: space-between;
+                padding: 0 5.3333vw;
+                box-sizing: border-box;
+            }
+    
+            .bottom-btn-container span {
+                display: inline-block;
+                line-height: 13.3333vw;
+                font-size: 3.2vw;
+                color: #6685ed;
+            }
+        </style>
+        </head>
+        <body><div class="container"><h1><strong>1、资源规格接口</strong></h1>
+<h2><strong>1.1 媒体通过AGC云侧网关获取搜索或推荐数据</strong></h2>
+<table>
+  <tr>
+    <td>
+      <p>Method</p>
+    </td>
+    <td>
+      <p>URI</p>
+    </td>
+    <td>
+      <p>Description</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>POST</p>
+    </td>
+    <td>
+      <p>/mas/v1/media/open/query</p>
+    </td>
+    <td></td>
+  </tr>
+</table>
+<h3><strong>1.1.1 请求Request</strong></h3>
+<table>
+  <tr>
+    <td>
+      <p>Name</p>
+    </td>
+    <td>
+      <p>Mandatory</p>
+    </td>
+    <td>
+      <p>Type</p>
+    </td>
+    <td>
+      <p>position</p>
+    </td>
+    <td>
+      <p>Description</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>devId</p>
+    </td>
+    <td>
+      <p>M</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>header</p>
+    </td>
+    <td>
+      <p>开发者ID</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>requestParam</p>
+    </td>
+    <td>
+      <p>M</p>
+    </td>
+    <td>
+      <p><a href="#MediaOpenDataRequest"><u>MediaOpenDataRequest</u></a></p>
+    </td>
+    <td>
+      <p>body</p>
+    </td>
+    <td></td>
+  </tr>
+</table>
+<h3><strong>1.1.2 响应Response</strong></h3>
+<p> 200--响应消息体</p>
+<table>
+  <tr>
+    <td>
+      <p>Name</p>
+    </td>
+    <td>
+      <p>Mandatory</p>
+    </td>
+    <td>
+      <p>Type</p>
+    </td>
+    <td>
+      <p>Description</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>rtnCode</p>
+    </td>
+    <td>
+      <p>M</p>
+    </td>
+    <td>
+      <p>integer</p>
+    </td>
+    <td>
+      <p>返回码</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>rtnDesc</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>返回描述</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>requestId</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>请求参数原样返回</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>adInfos</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>list&lt;<a href="#AdInfo"><u>AdInfo</u></a>&gt;</p>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>
+      <p>hasNextPage</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>integer</p>
+    </td>
+    <td>
+      <p>是否有下一页地址, 0：无；1：有</p>
+    </td>
+  </tr>
+</table>
+<h1><strong>2、结构体</strong></h1>
+<h2><a id="MediaOpenDataRequest"></a><strong>2.1 MediaOpenDataRequest</strong></h2>
+<table>
+  <tr>
+    <td>
+      <p>Name</p>
+    </td>
+    <td>
+      <p>Mandatory</p>
+    </td>
+    <td>
+      <p>Type</p>
+    </td>
+    <td>
+      <p>Description</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>requestId</p>
+    </td>
+    <td>
+      <p>M</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>请求id（唯一），长度32位</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>apiVersion</p>
+    </td>
+    <td>
+      <p>M</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>API版本号</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>adSlot</p>
+    </td>
+    <td>
+      <p>M</p>
+    </td>
+    <td>
+      <p><a href="#AdSlot"><u>AdSlot</u></a></p>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>
+      <p>deviceInfo</p>
+    </td>
+    <td>
+      <p>M</p>
+    </td>
+    <td>
+      <p><a href="#MediaDeviceInfo"><u>MediaDeviceInfo</u></a></p>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>
+      <p>networkInfo</p>
+    </td>
+    <td>
+      <p>M</p>
+    </td>
+    <td>
+      <p><a href="#NetworkInfo"><u>NetworkInfo</u></a></p>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>
+      <p>mediaInfo</p>
+    </td>
+    <td>
+      <p>M</p>
+    </td>
+    <td>
+      <p><a href="#MediaInfo"><u>MediaInfo</u></a></p>
+    </td>
+    <td></td>
+  </tr>
+</table>
+<h2><a id="AdSlot"></a><strong>2.2 AdSlot</strong></h2>
+<table>
+  <tr>
+    <td>
+      <p>Name</p>
+    </td>
+    <td>
+      <p>Mandatory</p>
+    </td>
+    <td>
+      <p>Type</p>
+    </td>
+    <td>
+      <p>Description</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>slotId</p>
+    </td>
+    <td>
+      <p>M</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>展示位Id，通过AGC管理台创建展示位时产生</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>adCount</p>
+    </td>
+    <td>
+      <p>M</p>
+    </td>
+    <td>
+      <p>integer</p>
+    </td>
+    <td>
+      <p>请求广告数量,榜单类应用列表广告取值不超过30；其它场景广告位只能填1</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>pageNumber</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>integer</p>
+    </td>
+    <td>
+      <p>当前请求的页码数,取值1到10，不填写或填写错误可能导致榜单类应用列表广告重复</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>lastItemIds</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>list&lt;string&gt;</p>
+    </td>
+    <td>
+      <p>最近曝光过的广告，DSP后台会过滤掉这些广告，不填写或填写错误可能导致短时间内多次请求的广告重复。</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>installedApp</p>
+    </td>
+    <td>
+      <p>M</p>
+    </td>
+    <td>
+      <p>integer</p>
+    </td>
+    <td>
+      <p>返回应用的安装过滤标识,仅推荐场景使用，取值：1-仅未安装应用 2-仅已安装应用 3-不限；仅限华为内媒生效，外媒获取不到udid；</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>personalize</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>integer</p>
+    </td>
+    <td>
+      <p>个性化标识，0-非个性化推荐（所有终端用户看到的广告一样，默认），1-个性化推荐</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>keywords</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>搜索关键词，搜索场景必填；</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>downloadType</p>
+    </td>
+    <td>
+      <p>M</p>
+    </td>
+    <td>
+      <p>integer</p>
+    </td>
+    <td>
+      <p>媒体侧的应用下载方式：1：通过AGDSDK下载；2：通过deeplink下载（安装方式有限）；</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>installType</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>integer</p>
+    </td>
+    <td>
+      <p>安装方式，不同的安装方式有不同的安装体验，downloadType=2时必填，取值范围：1：Mini详情页，手动安装；6：全屏详情页，手动安装；7：Mini详情页，自动安装。自动安装时会有通知栏显示进度条；8：全屏详情页，自动安装，自动安装时会有通知栏显示进度条</p>
+    </td>
+  </tr>
+</table>
+<h2><a id="MaterialMeta"></a><strong>2.3 MaterialMeta</strong></h2>
+<table>
+  <tr>
+    <td>
+      <p>Name</p>
+    </td>
+    <td>
+      <p>Mandatory</p>
+    </td>
+    <td>
+      <p>Type</p>
+    </td>
+    <td>
+      <p>Description</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>adFlag</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>integer</p>
+    </td>
+    <td>
+      <p>是否为广告应用，0-非广告；1-是广告</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>creativeType</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>广告样式类型（后续可以拓展信息流、bannner等），本期不填</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>appInfo</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p><a href="#AdAppInfo"><u>AdAppInfo</u></a></p>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>
+      <p>showUrl</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>曝光回调地址，媒体侧曝光后回调此地址，格式：https://monitor.xxxx.com/ag/media/report?time=__TIME__&amp;param=xxxxx&amp;extInfo=__EXTINFO__ 媒体需替换的宏参数： time：曝光时长； extInfo：媒体可替换time及扩展信息参数； </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>clickUrl</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>点击回调地址，用户在媒体上点击了广告回调此地址，格式：https://monitor.xxxx.com/ag/media/report?clickType=__CLICKTYPE__&amp;param=xxxxx&amp;extInfo=__EXTINFO__，媒体可扩展信息参数 媒体需替换的宏参数： clickType：点击类型，取值：icon，install； extInfo：媒体可替换time及扩展信息参数；</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>ecpm</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>广告价值</p>
+    </td>
+  </tr>
+</table>
+<h2><a id="MediaInfo"></a><strong>2.4 MediaInfo</strong></h2>
+<table>
+  <tr>
+    <td>
+      <p>Name</p>
+    </td>
+    <td>
+      <p>Mandatory</p>
+    </td>
+    <td>
+      <p>Type</p>
+    </td>
+    <td>
+      <p>Description</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>mediaPkgName</p>
+    </td>
+    <td>
+      <p>M</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>媒体包名</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>mediaVersion</p>
+    </td>
+    <td>
+      <p>M</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>媒体版本号</p>
+    </td>
+  </tr>
+</table>
+<h2><a id="MediaOpenDataResponse"></a><strong>2.5 MediaOpenDataResponse</strong></h2>
+<table>
+  <tr>
+    <td>
+      <p>Name</p>
+    </td>
+    <td>
+      <p>Mandatory</p>
+    </td>
+    <td>
+      <p>Type</p>
+    </td>
+    <td>
+      <p>Description</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>rtnCode</p>
+    </td>
+    <td>
+      <p>M</p>
+    </td>
+    <td>
+      <p>integer</p>
+    </td>
+    <td>
+      <p>返回码</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>rtnDesc</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>返回描述</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>requestId</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>请求参数原样返回</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>adInfos</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>list&lt;<a href="#AdInfo"><u>AdInfo</u></a>&gt;</p>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>
+      <p>hasNextPage</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>integer</p>
+    </td>
+    <td>
+      <p>是否有下一页地址, 0：无；1：有</p>
+    </td>
+  </tr>
+</table>
+<h2><a id="NetworkInfo"></a><strong>2.6 NetworkInfo</strong></h2>
+<table>
+  <tr>
+    <td>
+      <p>Name</p>
+    </td>
+    <td>
+      <p>Mandatory</p>
+    </td>
+    <td>
+      <p>Type</p>
+    </td>
+    <td>
+      <p>Description</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>connectType</p>
+    </td>
+    <td>
+      <p>M</p>
+    </td>
+    <td>
+      <p>integer</p>
+    </td>
+    <td>
+      <p>网络类型：0 - 未知；1 - wifi；2 - 2G；3 - 3G；4 - 4G；5 - 5G</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>carrier</p>
+    </td>
+    <td>
+      <p>M</p>
+    </td>
+    <td>
+      <p>integer</p>
+    </td>
+    <td>
+      <p>运营商：0 - 未知; 1 - 移动; 2 - 联通; 3 - 电信</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>plmn</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>移动网络编码</p>
+    </td>
+  </tr>
+</table>
+<h2><a id="MediaDeviceInfo"></a><strong>2.7 MediaDeviceInfo</strong></h2>
+<table>
+  <tr>
+    <td>
+      <p>Name</p>
+    </td>
+    <td>
+      <p>Mandatory</p>
+    </td>
+    <td>
+      <p>Type</p>
+    </td>
+    <td>
+      <p>Description</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>oaid</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>设备广告ID</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>udid</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>设备唯一标识，华为内媒必填</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>deviceId</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>设备Id，与udid不能同时为空</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>deviceModel</p>
+    </td>
+    <td>
+      <p>M</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>设备型号</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>deviceType</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>设备类型，http://wiki.inhuawei.com/pages/viewpage.action?pageId=77323073</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>manufacturer</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>设备厂商，android设备：可调用系统接口android.os.Build.MANUFACTURER直接获得。如果获取不到，填写unknown(小写）</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>locale</p>
+    </td>
+    <td>
+      <p>M</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>语言环境，ISO语言编码，如zh_CN, en_US</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>country</p>
+    </td>
+    <td>
+      <p>M</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>服务国家或地区，ISO国家编码，如CN</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>mcc</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>移动国家码，如454,460</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>andriodApiLevel</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>integer</p>
+    </td>
+    <td>
+      <p>android接口级别</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>harmonyApiLevel</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>integer</p>
+    </td>
+    <td>
+      <p>harmonyApi接口级别</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>emuiApiLevel</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>integer</p>
+    </td>
+    <td>
+      <p>EMUI口级别</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>emuiVersion</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>EMUI版本</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>gmsSupport</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>integer</p>
+    </td>
+    <td>
+      <p>是否支持GMS，0-不支持（默认），1-支持</p>
+    </td>
+  </tr>
+</table>
+<h2><a id="AdAppInfo"></a><strong>2.8 AdAppInfo</strong></h2>
+<table>
+  <tr>
+    <td>
+      <p>Name</p>
+    </td>
+    <td>
+      <p>Mandatory</p>
+    </td>
+    <td>
+      <p>Type</p>
+    </td>
+    <td>
+      <p>Description</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>appId</p>
+    </td>
+    <td>
+      <p>M</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>应用appId</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>packageName</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>应用包名</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>appName</p>
+    </td>
+    <td>
+      <p>M</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>应用名称</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>description</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>应用描述</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>developerName</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>开发者名称</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>packageType</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>integer</p>
+    </td>
+    <td>
+      <p>应用包类型，0-APK；3：RPK；11和12是weblink应用</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>openUrl</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>NOAPK的打开地址</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>versionCode</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>版本号</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>versionName</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>软件版本号</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>icon</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>应用icon地址</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>secCategory</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>应用的二级分类名</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>thirdCategory</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>应用的三级分类名</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>size</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>long</p>
+    </td>
+    <td>
+      <p>应用包大小，单位Byte</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>sizeDesc</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>应用大小文字描述，如11.3M</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>downloads</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>下载次数</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>downloadDesc</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>下载次数描述</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>stars</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>应用评分</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>releaseDate</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>发布日期，精确到天，YYYY-MM-dd</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>memo</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>小编一句话介绍</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>downloadLink</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>应用下载的deeplink，媒体可通过此deeplink来下载应用，下载体验有intallType指定，请求中downnloadType=2时返回</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>downloadParam</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p><a href="#DownloadParam"><u>DownloadParam</u></a></p>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>
+      <p>clickWapUrl</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>广告主配置的点击H5跳转地址</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>clickDeepLink</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>广告主配置的点击deeplink跳转地址</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>appDetailWapUrl</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>应用详情页的H5地址</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>appDetailDeepLink</p>
+    </td>
+    <td>
+      <p>O</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>应用详情页的Deeplink地址</p>
+    </td>
+  </tr>
+</table>
+<h2><a id="DownloadParam"></a><strong>2.9 DownloadParam</strong></h2>
+<table>
+  <tr>
+    <td>
+      <p>Name</p>
+    </td>
+    <td>
+      <p>Mandatory</p>
+    </td>
+    <td>
+      <p>Type</p>
+    </td>
+    <td>
+      <p>Description</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>detailId</p>
+    </td>
+    <td>
+      <p>M</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>应用打点跟踪ID信息</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>partnerId</p>
+    </td>
+    <td>
+      <p>M</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>AGD的合作方Id</p>
+    </td>
+  </tr>
+</table>
+<h2><a id="AdInfo"></a><strong>2.10 AdInfo</strong></h2>
+<table>
+  <tr>
+    <td>
+      <p>Name</p>
+    </td>
+    <td>
+      <p>Mandatory</p>
+    </td>
+    <td>
+      <p>Type</p>
+    </td>
+    <td>
+      <p>Description</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>adId</p>
+    </td>
+    <td>
+      <p>M</p>
+    </td>
+    <td>
+      <p>string</p>
+    </td>
+    <td>
+      <p>广告ID</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>Material</p>
+    </td>
+    <td>
+      <p>M</p>
+    </td>
+    <td>
+      <p><a href="#MaterialMeta"><u>MaterialMeta</u></a></p>
+    </td>
+    <td></td>
+  </tr>
+</table></div></body></html>
