@@ -11,7 +11,6 @@ Vue.config.productionTip = false
 
 // 把 axios 註冊為原型
 Vue.prototype.$axios = axios
-
 Vue.use(ElementUI);
 
 /* eslint-disable no-new */

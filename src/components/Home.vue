@@ -31,7 +31,7 @@
 import Prism from 'prismjs'
 import 'prismjs/themes/prism.css'
 export default {
-  name: 'HelloWorld',
+  name: 'Home',
   data() {
     return {
       msg: 'easy docx html',
