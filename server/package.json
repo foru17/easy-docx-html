@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start":"start:dev",
+    "start":"npm run start:dev",
     "start:dev": "cross-env NODE_ENV=development nodemon ./bin/www",
     "start:prod": "cross-env NODE_ENV=production node ./bin/www"
   },
